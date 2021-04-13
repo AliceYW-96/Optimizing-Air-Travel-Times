@@ -1,0 +1,2210 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.RelationshipCalculations.true...RelationshipCalculations />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Extract+ (Multiple Connections)' inline='true' name='federated.1ygyfh10w9flnk15rq6w600pg88e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Output' name='hyper.1z0vd611mxtzit1ay9s4i0r0xkiv'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Floris/Documents/My Tableau Prep Repository/Datasources/Output.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+          <named-connection caption='Hope' name='excel-direct.1s1qy5q0a7agap13el66z18m6747'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Floris/Downloads/Hope.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.1z0vd611mxtzit1ay9s4i0r0xkiv' name='Extract' table='[Extract].[Extract]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='hyper.1z0vd611mxtzit1ay9s4i0r0xkiv' name='Extract' table='[Extract].[Extract]' type='table' />
+          <relation connection='excel-direct.1s1qy5q0a7agap13el66z18m6747' name='Test 2' table='[&apos;Test 2$&apos;]' type='table'>
+            <columns gridOrigin='A1:C168:no:A1:C168:0' header='yes' outcome='6'>
+              <column datatype='string' name='IATA' ordinal='0' />
+              <column datatype='real' name='Lat' ordinal='1' />
+              <column datatype='real' name='Long' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Test 2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C168:no:A1:C168:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Table Names</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FL_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[FL_DATE]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>FL_DATE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>943</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UNIQUE_CARRIER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UNIQUE_CARRIER]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>UNIQUE_CARRIER</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CARRIER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CARRIER]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CARRIER</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>11</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FL_NUM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FL_NUM]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>FL_NUM</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>13809</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIGIN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ORIGIN]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ORIGIN</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIGIN_CITY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ORIGIN_CITY_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ORIGIN_CITY_NAME</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIGIN_STATE_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ORIGIN_STATE_NM]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ORIGIN_STATE_NM</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEST</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DEST]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEST</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>182</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEST_CITY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DEST_CITY_NAME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEST_CITY_NAME</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>178</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEST_STATE_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DEST_STATE_NM]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEST_STATE_NM</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>49</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CRS_DEP_TIME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CRS_DEP_TIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CRS_DEP_TIME</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2064</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEP_TIME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DEP_TIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEP_TIME</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1935</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEP_DELAY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DEP_DELAY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEP_DELAY</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>968</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEP_DELAY_NEW</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DEP_DELAY_NEW]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEP_DELAY_NEW</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>962</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEP_DEL15</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DEP_DEL15]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEP_DEL15</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEP_DELAY_GROUP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEP_DELAY_GROUP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEP_DELAY_GROUP</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEP_TIME_BLK</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DEP_TIME_BLK]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DEP_TIME_BLK</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>19</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAXI_OUT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TAXI_OUT]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>TAXI_OUT</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>221</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WHEELS_OFF</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WHEELS_OFF]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>WHEELS_OFF</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1942</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WHEELS_ON</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WHEELS_ON]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>WHEELS_ON</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1849</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAXI_IN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TAXI_IN]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>TAXI_IN</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>118</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CRS_ARR_TIME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CRS_ARR_TIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CRS_ARR_TIME</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1556</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARR_TIME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ARR_TIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ARR_TIME</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1984</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARR_DELAY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ARR_DELAY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ARR_DELAY</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>958</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARR_DELAY_NEW</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ARR_DELAY_NEW]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ARR_DELAY_NEW</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>839</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARR_DEL15</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ARR_DEL15]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ARR_DEL15</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARR_DELAY_GROUP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ARR_DELAY_GROUP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ARR_DELAY_GROUP</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARR_TIME_BLK</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ARR_TIME_BLK]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ARR_TIME_BLK</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>19</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CANCELLED</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CANCELLED]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CANCELLED</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CANCELLATION_CODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CANCELLATION_CODE]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CANCELLATION_CODE</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIVERTED</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DIVERTED]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DIVERTED</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CRS_ELAPSED_TIME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CRS_ELAPSED_TIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CRS_ELAPSED_TIME</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>597</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACTUAL_ELAPSED_TIME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ACTUAL_ELAPSED_TIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ACTUAL_ELAPSED_TIME</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>664</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AIR_TIME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AIR_TIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>AIR_TIME</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>624</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FLIGHTS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FLIGHTS]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>FLIGHTS</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISTANCE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DISTANCE]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DISTANCE</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>190</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISTANCE_GROUP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DISTANCE_GROUP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DISTANCE_GROUP</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CARRIER_DELAY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CARRIER_DELAY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CARRIER_DELAY</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>822</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEATHER_DELAY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WEATHER_DELAY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>WEATHER_DELAY</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>648</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAS_DELAY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NAS_DELAY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>NAS_DELAY</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>479</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SECURITY_DELAY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SECURITY_DELAY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SECURITY_DELAY</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LATE_AIRCRAFT_DELAY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LATE_AIRCRAFT_DELAY]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>LATE_AIRCRAFT_DELAY</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>484</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRST_DEP_TIME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIRST_DEP_TIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>FIRST_DEP_TIME</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>30737</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL_ADD_GTIME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOTAL_ADD_GTIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>TOTAL_ADD_GTIME</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>322</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LONGEST_ADD_GTIME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LONGEST_ADD_GTIME]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>LONGEST_ADD_GTIME</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>322</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IATA</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[IATA]</local-name>
+            <parent-name>[Test 2]</parent-name>
+            <remote-alias>IATA</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[Test 2]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Long</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Long]</local-name>
+            <parent-name>[Test 2]</parent-name>
+            <remote-alias>Long</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Actual Elapsed Time' datatype='real' name='[ACTUAL_ELAPSED_TIME]' role='measure' type='quantitative' />
+      <column caption='Air Time' datatype='real' name='[AIR_TIME]' role='measure' type='quantitative' />
+      <column caption='Arr Del15' datatype='real' name='[ARR_DEL15]' role='measure' type='quantitative' />
+      <column caption='Arr Delay' datatype='real' name='[ARR_DELAY]' role='measure' type='quantitative' />
+      <column caption='Arr Delay Group' datatype='integer' name='[ARR_DELAY_GROUP]' role='measure' type='quantitative' />
+      <column caption='Arr Delay New' datatype='real' name='[ARR_DELAY_NEW]' role='measure' type='quantitative' />
+      <column caption='Arr Time' datatype='string' name='[ARR_TIME]' role='dimension' type='nominal' />
+      <column caption='Arr Time Blk' datatype='string' name='[ARR_TIME_BLK]' role='dimension' type='nominal' />
+      <column caption='Cancellation Code' datatype='string' name='[CANCELLATION_CODE]' role='dimension' type='nominal' />
+      <column caption='Cancelled' datatype='real' name='[CANCELLED]' role='measure' type='quantitative' />
+      <column caption='Carrier' datatype='string' name='[CARRIER]' role='dimension' type='nominal' />
+      <column caption='Carrier Delay' datatype='real' name='[CARRIER_DELAY]' role='measure' type='quantitative' />
+      <column caption='Crs Arr Time' datatype='string' name='[CRS_ARR_TIME]' role='dimension' type='nominal' />
+      <column caption='Crs Dep Time' datatype='string' name='[CRS_DEP_TIME]' role='dimension' type='nominal' />
+      <column caption='Crs Elapsed Time' datatype='real' name='[CRS_ELAPSED_TIME]' role='measure' type='quantitative' />
+      <column caption='Route Identifier' datatype='string' name='[Calculation_1461136608921083904]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[ORIGIN] + &quot;_&quot; + [DEST]' />
+      </column>
+      <column caption='Route order' datatype='string' name='[Calculation_1461136608921874433]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Table Names] = &quot;Flight Data 2016-2018.hyper/Extract&quot; THEN &apos;1&apos;&#13;&#10;ELSE &apos;2&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Route Location' datatype='string' name='[Calculation_1461136608922243074]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Table Names] = &quot;Flight Data 2016-2018.hyper/Extract&quot; THEN   [ORIGIN]&#13;&#10;ELSE [DEST]&#13;&#10;END' />
+      </column>
+      <column caption='Dep Del15' datatype='real' name='[DEP_DEL15]' role='measure' type='quantitative' />
+      <column caption='Dep Delay' datatype='real' name='[DEP_DELAY]' role='measure' type='quantitative' />
+      <column caption='Dep Delay Group' datatype='integer' name='[DEP_DELAY_GROUP]' role='measure' type='quantitative' />
+      <column caption='Dep Delay New' datatype='real' name='[DEP_DELAY_NEW]' role='measure' type='quantitative' />
+      <column caption='Dep Time' datatype='string' name='[DEP_TIME]' role='dimension' type='nominal' />
+      <column caption='Dep Time Blk' datatype='string' name='[DEP_TIME_BLK]' role='dimension' type='nominal' />
+      <column caption='Dest' datatype='string' name='[DEST]' role='dimension' type='nominal' />
+      <column caption='Dest City Name' datatype='string' name='[DEST_CITY_NAME]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Dest State Nm' datatype='string' name='[DEST_STATE_NM]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Distance' datatype='real' name='[DISTANCE]' role='measure' type='quantitative' />
+      <column caption='Distance Group' datatype='integer' name='[DISTANCE_GROUP]' role='measure' type='quantitative' />
+      <column caption='Diverted' datatype='real' name='[DIVERTED]' role='measure' type='quantitative' />
+      <column caption='First Dep Time' datatype='string' name='[FIRST_DEP_TIME]' role='dimension' type='nominal' />
+      <column caption='Flights' datatype='real' name='[FLIGHTS]' role='measure' type='quantitative' />
+      <column caption='Fl Date' datatype='date' name='[FL_DATE]' role='dimension' type='ordinal' />
+      <column caption='Fl Num' datatype='integer' name='[FL_NUM]' role='dimension' type='ordinal' />
+      <column caption='Iata' datatype='string' name='[IATA]' role='dimension' semantic-role='[Airport].[Name]' type='nominal' />
+      <column caption='Late Aircraft Delay' datatype='real' name='[LATE_AIRCRAFT_DELAY]' role='measure' type='quantitative' />
+      <column caption='Longest Add Gtime' datatype='real' name='[LONGEST_ADD_GTIME]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Nas Delay' datatype='real' name='[NAS_DELAY]' role='measure' type='quantitative' />
+      <column caption='Origin' datatype='string' name='[ORIGIN]' role='dimension' type='nominal' />
+      <column caption='Origin City Name' datatype='string' name='[ORIGIN_CITY_NAME]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Origin State Nm' datatype='string' name='[ORIGIN_STATE_NM]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Origin (copy)' datatype='string' name='[Origin (copy)_2616028438434914305]' role='dimension' semantic-role='[Airport].[Name]' type='nominal'>
+        <calculation class='tableau' formula='[ORIGIN]' />
+      </column>
+      <column caption='Security Delay' datatype='real' name='[SECURITY_DELAY]' role='measure' type='quantitative' />
+      <column caption='Taxi In' datatype='real' name='[TAXI_IN]' role='measure' type='quantitative' />
+      <column caption='Taxi Out' datatype='real' name='[TAXI_OUT]' role='measure' type='quantitative' />
+      <column caption='Total Add Gtime' datatype='real' name='[TOTAL_ADD_GTIME]' role='measure' type='quantitative' />
+      <column caption='Unique Carrier' datatype='string' name='[UNIQUE_CARRIER]' role='dimension' type='nominal' />
+      <column caption='Weather Delay' datatype='real' name='[WEATHER_DELAY]' role='measure' type='quantitative' />
+      <column caption='Wheels Off' datatype='string' name='[WHEELS_OFF]' role='dimension' type='nominal' />
+      <column caption='Wheels On' datatype='string' name='[WHEELS_ON]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Test 2' datatype='table' name='[__tableau_internal_object_id__].[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1461136608921083904]' derivation='None' name='[none:Calculation_1461136608921083904:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1461136608921874433]' derivation='None' name='[none:Calculation_1461136608921874433:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Route Identifier,Route order)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_1461136608921083904:nk]' />
+          <groupfilter function='level-members' level='[none:Calculation_1461136608921874433:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/wangy/Desktop/Portfolio/Optimizing Air Travel Times/SectionA_Team26_Tableau2.twb Files/Data/Book2.twb Files/Extract+ (Multiple Connections).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/28/2021 06:09:24 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD' table='[Extract].[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD' table='[Extract].[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]' type='table' />
+            <relation name='Test 2_3DC7E68C56A34C31BDD16F46CECE2118' table='[Extract].[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <refresh>
+            <refresh-event add-from-file-path='Extract+ (Multiple Connections)' increment-value='%null%' refresh-type='create' rows-inserted='2136955' timestamp-start='2021-01-28 06:09:24.255' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Table Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Names]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>Table Names</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FL_DATE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[FL_DATE]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>FL_DATE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Extract</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>955</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UNIQUE_CARRIER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[UNIQUE_CARRIER]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>UNIQUE_CARRIER</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CARRIER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CARRIER]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>CARRIER</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FL_NUM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FL_NUM]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>FL_NUM</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Extract</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13668</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ORIGIN</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ORIGIN]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ORIGIN</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ORIGIN_CITY_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ORIGIN_CITY_NAME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ORIGIN_CITY_NAME</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ORIGIN_STATE_NM</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ORIGIN_STATE_NM]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ORIGIN_STATE_NM</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEST</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DEST]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEST</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>218</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEST_CITY_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DEST_CITY_NAME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEST_CITY_NAME</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>213</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEST_STATE_NM</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DEST_STATE_NM]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEST_STATE_NM</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CRS_DEP_TIME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CRS_DEP_TIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>CRS_DEP_TIME</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2102</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEP_TIME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DEP_TIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEP_TIME</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2162</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEP_DELAY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DEP_DELAY]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEP_DELAY</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1121</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEP_DELAY_NEW</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DEP_DELAY_NEW]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEP_DELAY_NEW</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1117</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEP_DEL15</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DEP_DEL15]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEP_DEL15</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEP_DELAY_GROUP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DEP_DELAY_GROUP]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEP_DELAY_GROUP</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Extract</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEP_TIME_BLK</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DEP_TIME_BLK]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DEP_TIME_BLK</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TAXI_OUT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TAXI_OUT]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>TAXI_OUT</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>208</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WHEELS_OFF</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WHEELS_OFF]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>WHEELS_OFF</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2217</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WHEELS_ON</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WHEELS_ON]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>WHEELS_ON</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2124</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TAXI_IN</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TAXI_IN]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>TAXI_IN</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CRS_ARR_TIME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CRS_ARR_TIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>CRS_ARR_TIME</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1545</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ARR_TIME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ARR_TIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ARR_TIME</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2104</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ARR_DELAY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ARR_DELAY]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ARR_DELAY</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1064</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ARR_DELAY_NEW</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ARR_DELAY_NEW]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ARR_DELAY_NEW</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1040</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ARR_DEL15</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ARR_DEL15]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ARR_DEL15</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ARR_DELAY_GROUP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ARR_DELAY_GROUP]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ARR_DELAY_GROUP</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Extract</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ARR_TIME_BLK</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ARR_TIME_BLK]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ARR_TIME_BLK</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CANCELLED</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CANCELLED]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>CANCELLED</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CANCELLATION_CODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CANCELLATION_CODE]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>CANCELLATION_CODE</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DIVERTED</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DIVERTED]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DIVERTED</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CRS_ELAPSED_TIME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CRS_ELAPSED_TIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>CRS_ELAPSED_TIME</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>524</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ACTUAL_ELAPSED_TIME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ACTUAL_ELAPSED_TIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>ACTUAL_ELAPSED_TIME</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>683</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AIR_TIME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AIR_TIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>AIR_TIME</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>590</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FLIGHTS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FLIGHTS]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>FLIGHTS</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DISTANCE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DISTANCE]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DISTANCE</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>215</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DISTANCE_GROUP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DISTANCE_GROUP]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>DISTANCE_GROUP</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Extract</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CARRIER_DELAY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CARRIER_DELAY]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>CARRIER_DELAY</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>816</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WEATHER_DELAY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[WEATHER_DELAY]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>WEATHER_DELAY</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>634</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAS_DELAY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NAS_DELAY]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>NAS_DELAY</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>425</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SECURITY_DELAY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SECURITY_DELAY]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>SECURITY_DELAY</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LATE_AIRCRAFT_DELAY</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LATE_AIRCRAFT_DELAY]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>LATE_AIRCRAFT_DELAY</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>709</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIRST_DEP_TIME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FIRST_DEP_TIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>FIRST_DEP_TIME</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Extract</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23030</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOTAL_ADD_GTIME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TOTAL_ADD_GTIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>TOTAL_ADD_GTIME</remote-alias>
+              <ordinal>44</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>325</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LONGEST_ADD_GTIME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LONGEST_ADD_GTIME]</local-name>
+              <parent-name>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</parent-name>
+              <remote-alias>LONGEST_ADD_GTIME</remote-alias>
+              <ordinal>45</ordinal>
+              <family>Extract</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>325</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IATA</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IATA]</local-name>
+              <parent-name>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</parent-name>
+              <remote-alias>IATA</remote-alias>
+              <ordinal>46</ordinal>
+              <family>Test 2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>167</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lat]</local-name>
+              <parent-name>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</parent-name>
+              <remote-alias>Lat</remote-alias>
+              <ordinal>47</ordinal>
+              <family>Test 2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>167</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Long</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Long]</local-name>
+              <parent-name>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</parent-name>
+              <remote-alias>Long</remote-alias>
+              <ordinal>48</ordinal>
+              <family>Test 2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>167</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Table Names' />
+        <field-sort-custom-order field='Calculation_1461136608922243074' />
+        <field-sort-custom-order field='Calculation_1461136608921874433' />
+        <field-sort-custom-order field='FL_DATE' />
+        <field-sort-custom-order field='UNIQUE_CARRIER' />
+        <field-sort-custom-order field='CARRIER' />
+        <field-sort-custom-order field='FL_NUM' />
+        <field-sort-custom-order field='ORIGIN' />
+        <field-sort-custom-order field='Origin (copy)_2616028438434914305' />
+        <field-sort-custom-order field='Calculation_1461136608921083904' />
+        <field-sort-custom-order field='ORIGIN_CITY_NAME' />
+        <field-sort-custom-order field='ORIGIN_STATE_NM' />
+        <field-sort-custom-order field='DEST' />
+        <field-sort-custom-order field='DEST_CITY_NAME' />
+        <field-sort-custom-order field='DEST_STATE_NM' />
+        <field-sort-custom-order field='CRS_DEP_TIME' />
+        <field-sort-custom-order field='DEP_TIME' />
+        <field-sort-custom-order field='DEP_DELAY' />
+        <field-sort-custom-order field='DEP_DELAY_NEW' />
+        <field-sort-custom-order field='DEP_DEL15' />
+        <field-sort-custom-order field='DEP_DELAY_GROUP' />
+        <field-sort-custom-order field='DEP_TIME_BLK' />
+        <field-sort-custom-order field='TAXI_OUT' />
+        <field-sort-custom-order field='WHEELS_OFF' />
+        <field-sort-custom-order field='WHEELS_ON' />
+        <field-sort-custom-order field='TAXI_IN' />
+        <field-sort-custom-order field='CRS_ARR_TIME' />
+        <field-sort-custom-order field='ARR_TIME' />
+        <field-sort-custom-order field='ARR_DELAY' />
+        <field-sort-custom-order field='ARR_DELAY_NEW' />
+        <field-sort-custom-order field='ARR_DEL15' />
+        <field-sort-custom-order field='ARR_DELAY_GROUP' />
+        <field-sort-custom-order field='ARR_TIME_BLK' />
+        <field-sort-custom-order field='CANCELLED' />
+        <field-sort-custom-order field='CANCELLATION_CODE' />
+        <field-sort-custom-order field='DIVERTED' />
+        <field-sort-custom-order field='CRS_ELAPSED_TIME' />
+        <field-sort-custom-order field='ACTUAL_ELAPSED_TIME' />
+        <field-sort-custom-order field='AIR_TIME' />
+        <field-sort-custom-order field='FLIGHTS' />
+        <field-sort-custom-order field='DISTANCE' />
+        <field-sort-custom-order field='DISTANCE_GROUP' />
+        <field-sort-custom-order field='CARRIER_DELAY' />
+        <field-sort-custom-order field='WEATHER_DELAY' />
+        <field-sort-custom-order field='NAS_DELAY' />
+        <field-sort-custom-order field='SECURITY_DELAY' />
+        <field-sort-custom-order field='LATE_AIRCRAFT_DELAY' />
+        <field-sort-custom-order field='FIRST_DEP_TIME' />
+        <field-sort-custom-order field='TOTAL_ADD_GTIME' />
+        <field-sort-custom-order field='LONGEST_ADD_GTIME' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD'>
+            <properties context=''>
+              <relation connection='hyper.1z0vd611mxtzit1ay9s4i0r0xkiv' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD' table='[Extract].[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]' type='table' />
+            </properties>
+          </object>
+          <object caption='Test 2' id='Test 2_3DC7E68C56A34C31BDD16F46CECE2118'>
+            <properties context=''>
+              <relation connection='excel-direct.1s1qy5q0a7agap13el66z18m6747' name='Test 2' table='[&apos;Test 2$&apos;]' type='table'>
+                <columns gridOrigin='A1:C168:no:A1:C168:0' header='yes' outcome='6'>
+                  <column datatype='string' name='IATA' ordinal='0' />
+                  <column datatype='real' name='Lat' ordinal='1' />
+                  <column datatype='real' name='Long' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Test 2_3DC7E68C56A34C31BDD16F46CECE2118' table='[Extract].[Test 2_3DC7E68C56A34C31BDD16F46CECE2118]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression _.fcp.RelationshipCalculations.false...op='[IF Table Names = &quot;Flight Data 2016-2018.hyper/Extract&quot; THEN   ORIGIN&#13;&#10;ELSE DEST&#13;&#10;END]' _.fcp.RelationshipCalculations.true...op='IF [Table Names] = &quot;Flight Data 2016-2018.hyper/Extract&quot; THEN   [ORIGIN]&#13;&#10;ELSE [DEST]&#13;&#10;END' />
+              <expression op='[IATA]' />
+            </expression>
+            <first-end-point object-id='Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD' />
+            <second-end-point object-id='Test 2_3DC7E68C56A34C31BDD16F46CECE2118' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Extract+ (Multiple Connections)' name='federated.1ygyfh10w9flnk15rq6w600pg88e' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ygyfh10w9flnk15rq6w600pg88e'>
+            <column caption='Arr Delay' datatype='real' name='[ARR_DELAY]' role='measure' type='quantitative' />
+            <column caption='Route Identifier' datatype='string' name='[Calculation_1461136608921083904]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[ORIGIN] + &quot;_&quot; + [DEST]' />
+            </column>
+            <column caption='Route order' datatype='string' name='[Calculation_1461136608921874433]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Table Names] = &quot;Flight Data 2016-2018.hyper/Extract&quot; THEN &apos;1&apos;&#13;&#10;ELSE &apos;2&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Dest' datatype='string' name='[DEST]' role='dimension' type='nominal' />
+            <column caption='Fl Date' datatype='date' name='[FL_DATE]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Origin' datatype='string' name='[ORIGIN]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Table Names]' role='dimension' type='nominal' />
+            <column-instance column='[ARR_DELAY]' derivation='Avg' name='[avg:ARR_DELAY:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lat]' derivation='Avg' name='[avg:Lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Long]' derivation='Avg' name='[avg:Long:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1461136608921083904]' derivation='None' name='[none:Calculation_1461136608921083904:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1461136608921874433]' derivation='None' name='[none:Calculation_1461136608921874433:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FL_DATE]' derivation='Year' name='[yr:FL_DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ygyfh10w9flnk15rq6w600pg88e].[Exclusions (Route Identifier,Route order)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Calculation_1461136608921083904:nk]' />
+                <groupfilter function='level-members' level='[none:Calculation_1461136608921874433:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Calculation_1461136608921874433:nk]' member='&quot;2&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Calculation_1461136608921083904:nk]' member='&quot;ATL_ANC&quot;' />
+                    <groupfilter function='member' level='[none:Calculation_1461136608921083904:nk]' member='&quot;ATL_EYW&quot;' />
+                    <groupfilter function='member' level='[none:Calculation_1461136608921083904:nk]' member='&quot;ATL_HNL&quot;' />
+                    <groupfilter function='member' level='[none:Calculation_1461136608921083904:nk]' member='&quot;ATL_SJU&quot;' />
+                    <groupfilter function='member' level='[none:Calculation_1461136608921083904:nk]' member='&quot;ATL_STT&quot;' />
+                    <groupfilter function='member' level='[none:Calculation_1461136608921083904:nk]' member='&quot;ATL_STX&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:Calculation_1461136608921083904:nk]' />
+                  <hierarchy name='[none:Calculation_1461136608921874433:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ygyfh10w9flnk15rq6w600pg88e].[yr:FL_DATE:ok]'>
+            <groupfilter function='member' level='[yr:FL_DATE:ok]' member='2018' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ygyfh10w9flnk15rq6w600pg88e].[yr:FL_DATE:ok]</column>
+            <column>[federated.1ygyfh10w9flnk15rq6w600pg88e].[Exclusions (Route Identifier,Route order)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:Long:qk]' field-type='quantitative' max='-4788325.4433269892' min='-18243272.81363824' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:Lat:qk]' field-type='quantitative' max='9124776.2985608727' min='1261083.5472782005' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:ARR_DELAY:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:ARR_DELAY:qk]' value='Average Delay&#10;'>
+              <formatted-text>
+                <run>Average Delay&#10;</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='Coastline' value='true' />
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+            <format attr='enabled' id='background' value='false' />
+            <format attr='enabled' id='barrier_line-land-polygon' value='false' />
+            <format attr='enabled' id='barrier_line-land-line' value='false' />
+            <format attr='enabled' id='national_park' value='false' />
+            <format attr='enabled' id='pitch' value='false' />
+            <format attr='enabled' id='industrial' value='false' />
+            <format attr='enabled' id='built-up-area' value='false' />
+            <format attr='enabled' id='water' value='false' />
+            <format attr='enabled' id='waterway-river-canal' value='false' />
+            <format attr='enabled' id='aeroway-polygon' value='false' />
+            <format attr='enabled' id='aeroway-runway' value='false' />
+            <format attr='enabled' id='aeroway-taxiway' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:ARR_DELAY:qk]' />
+              <path column='[federated.1ygyfh10w9flnk15rq6w600pg88e].[none:Calculation_1461136608921874433:nk]' />
+              <lod column='[federated.1ygyfh10w9flnk15rq6w600pg88e].[none:Calculation_1461136608921083904:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-halo' value='false' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:Lat:qk]</rows>
+        <cols>[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:Long:qk]</cols>
+      </table>
+      <simple-id uuid='{06E8B09B-388D-45FB-BF7A-1F3C8F1F41D8}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Extract+ (Multiple Connections)' name='federated.1ygyfh10w9flnk15rq6w600pg88e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ygyfh10w9flnk15rq6w600pg88e'>
+            <_.fcp.ObjectModelTableType.false...column caption='Extract' datatype='integer' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]' role='measure' type='quantitative' />
+            <column caption='Fl Date' datatype='date' name='[FL_DATE]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FL_DATE]' derivation='Year' name='[yr:FL_DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ygyfh10w9flnk15rq6w600pg88e].[yr:FL_DATE:ok]'>
+            <groupfilter function='member' level='[yr:FL_DATE:ok]' member='2018' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ygyfh10w9flnk15rq6w600pg88e].[yr:FL_DATE:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ygyfh10w9flnk15rq6w600pg88e].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Total Number of Flights:&lt;</run>
+                <run>[federated.1ygyfh10w9flnk15rq6w600pg88e].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_245A57AFE96B48E6B25D5B7CB1081FBD:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A66042BF-24A3-48F9-93EC-124D11711294}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:ARR_DELAY:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[attr:DISTANCE_GROUP:qk]</field>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[avg:ARR_DELAY:qk]</field>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[none:Calculation_1461136608921083904:nk]</field>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[none:Calculation_1461136608921874433:nk]</field>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[none:ORIGIN:nk]</field>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[none:Origin (copy)_2616028438434914305:nk]</field>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[none:UNIQUE_CARRIER:nk]</field>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[yr:FL_DATE:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{2CC07381-58C2-4540-801F-78968AD46D53}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[none:FL_NUM:ok]</field>
+            <field>[federated.1ygyfh10w9flnk15rq6w600pg88e].[yr:FL_DATE:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{537BFB07-989B-4138-BF4D-209C765A4571}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='25' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAAZCAYAAABn7SHgAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAIRklEQVR4nO2cfUiTXxvHP43p1iqHESb2DpUlvcKYLElbzTCzXBAUQVZWg0IqlsUwyCic
+      68WxKEoWZUVZBFnUColFZiTSGyWlGJZaUTYtY6blNu6eP36451naL18yedj9gf1zztl1Xec+
+      5zrX9z6wDfrx48cPRESCFMlAByAiMpCICSAS1IgJIBLUiAkgEtSICSAS1IgJIBLUiAkgEtSI
+      CSAS1IgJIBLUiAkgEtSICSAS1IgJIBLUiAkgEtT0OgHsdjsqleqXH6fT+Sfj7JLW1lYyMjKo
+      qKjosr+iooKEhATMZjOCIAT0OZ1OTCZTv8dYUVHBvn37+t1PdxEEAYfDQWJiIiqVqlO/0+ns
+      cj3tdjvwz3wyMjJobW31f8dkMvn7u4vdbv8re+RnBEHAbDb796i0t4YMBgMGgwEAl8uFyWTC
+      YrEQERHRY1smkwmdTodOp+ttOL9Eo9HQ1NRETU0NkydP/uP2/99wuVxcu3aNY8eOMWnSpC7H
+      6HQ6LBZLt232ZGxPcDqdOJ3OP2r/4cOHNDQ0oNFogCCQQEOGDGHhwoUUFhbi8/kGOpwBx+Vy
+      ERoaSlRU1ECH8tdpbm6moKAAg8HAkCFDgL+QAG1tbZjNZuLi4lCr1axevZrXr18D/5UoHXLk
+      Z/n0+vVrNm3ahEajQaVSkZqaSmlpaY9jSEhIwO12U1lZ+csxdru9Uxn/WSbZ7XbOnj2L0WhE
+      o9Gg0Wg4deoU1dXVrFmzhtjYWLRaLXfu3Amw09LS4n8GsbGxZGZm8uXLF39/hyxZtGhRl/Ps
+      qLAtLS0UFRURHx/fpeT42U5iYiIOh8Mv/0wmE+np6ZSXl5OQkNClBOoNJpMpQM4IgsDNmzdJ
+      TU1FpVIRFxeHwWDg/PnznZ7LwYMHmT9/Pmq1GqPRiNvtprW1lXXr1vntduyLjrVwu93s3LkT
+      jUaDWq1m+fLllJeX++06nU6Sk5NxuVwBMZ05cwaVSsW0adP87b2WQN3B5/Nx6NAh/8IolUpu
+      3bpFVlYWBw4cYMaMGdy9e/eXEqimpoZly5Zhs9kICQnhxYsX5OXlMX78eMaOHdvtOAYPHoxe
+      r+fChQvExMQglfZ+2jdu3GDLli3s37+fd+/esW3bNp48ecKuXbuYOHEi5eXlFBYWEhsbi0Kh
+      AKCuro6MjAx27NiB1+vFZrORk5NDbm4uUqkUp9NJWVkZhYWFKJVKKisryc3NZfjw4QGLdeXK
+      FZ4+fcq5c+e6nL/T6eTixYtYrVaio6Opr68nOzsbgJSUFCwWCxUVFdjtdvbv3+8/Bf80xcXF
+      nD59mpycHGJiYvB6veTl5QW8NwCcOHGC9PR0HA4HEomEPXv24HA4WLVqFQUFBb+UQBcvXmTk
+      yJHcvn0buVxOdXU1VVVV/v6u9tKzZ8+oq6sjJycnoL1fK0BpaSnfv39nz549hIeHI5FISEpK
+      IiMjo1svTbNmzaK0tNR/Qqxbt47nz5/z8uXLHscSHx+PXq9n9+7deDye3kwHgI0bNxIXF0dI
+      SAgRERGMGTMGg8HA5MmTkUgkTJw4kaFDh/K/vzSdPn068fHxhISEoFAoyMrKQiaTUV5ezufP
+      n8nPz+fWrVskJiaiVqtZu3Yt1dXVnDt3zm+jra2NlJQUrFZrl5vf5XJx6dIlrFYrU6dORSKR
+      MGHCBGw2Gzdv3gw4DfsTl8tFSUkJJ0+eZNq0aUgkEmQyGSNGjOg01mg0snz5chQKBXK5HJ1O
+      x9evX3/rIz4+nnv37rFhwwYKCgoYOnQoer2+y7GCIHDixAmqqqqw2Wydkr5fK0Bf+PbtG2az
+      mdmzZ5OVleU/TftyczN79mwuX74cUC4HAkEQGDRoEKGhofh8PoYPH05+fv6/XiAoFApkMtlf
+      jLL3SCQSJJL+O1unTJlCUVERb9++5f79+2zfvh2VSoXRaOxU3Zuamrh+/Trv37/HarUG9PXp
+      Fqg7jBkzhi9fvtDc3Ex4eLi//cmTJ7+VMC0tLcjlcv8J8ScIDQ1lxYoVFBYWMm/evD9iszc0
+      NDTw4cMHIiMjUSqVKBQKqqqqenWD1oFSqSQsLIza2toAO7W1tQD9Jnd+RiaT8fXrVz59+tSv
+      PiUSCePGjWPcuHEsXryY7OxsPn/+3OkZRkREcO3atU7f75Dd/SqBJkyYQGRkJIcPH6a5uRlB
+      ECguLqasrIykpCT/uKioKEpKSvj+/TterxePx4NUKuXjx4+8ePECQRBobGzk4MGDlJWV9Smm
+      mTNnMmzYMB48eBDQHhERwatXr2hra6O9vZ3i4mKOHTvWJ18dtLe3+/XvmzdvyM7ORq1WM3r0
+      aGQyGfPmzcNqtfL8+XMEQfD7v3r1ard9yGQykpKSOHLkCFVVVQiCQG1tLYcPHyY5OfmvJYBS
+      qWTGjBnk5eXR1NSEIAg8evSoV3f+4eHh1NfXU1dXhyAItLW1AXD8+HHu37+P1+tFEAQeP36M
+      x+NBLpf32Ee/VgCpVEpmZiY2m42UlBS8Xi/R0dGYzeaACrBy5Upyc3NJSEhAKpVisViYO3cu
+      GzZsYO/evbhcLkaNGsX69etpbGzsc0wrV65k8+bNqNVqf/v8+fMpKytDq9UilUrRarXo9fp/
+      vTnqrj+3282SJUtwu92EhYWxatUq0tLS/DJBr9cjlUrZsWMHjY2NyGQytFotmzdv7pEvnU6H
+      x+PBaDTS2NhIeHg4W7duJTk5uU9z6Clr167l6NGjpKam4vP5mDNnDjExMT22M336dBYsWEBa
+      Whrt7e0sXbqUXbt2MWfOHPLz88nMzEQQBKZMmUJ2djZhYWHAP9LGarVy+vTp31bVQeL/Aon8
+      Dex2O1KplPT09IEOJYD/AFYZZEbIabkwAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
